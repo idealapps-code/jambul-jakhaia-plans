@@ -320,6 +320,44 @@
                 border-top: 1px solid var(--border);
             }
 
+            @media (max-width: 900px) {
+                .pricing-wrapper {
+                    grid-template-columns: repeat(2, 1fr) !important;
+                }
+            }
+
+            @media (max-width: 650px) {
+                body {
+                    padding: 15px 10px;
+                }
+                .header {
+                    padding: 30px 20px;
+                }
+                .pricing-wrapper {
+                    grid-template-columns: 1fr !important;
+                }
+                .plan.featured {
+                    transform: scale(1.02);
+                }
+                .plan.featured:hover {
+                    transform: scale(1.02) translateY(-5px);
+                }
+                .additional-rates {
+                    grid-template-columns: 1fr;
+                    padding: 20px;
+                }
+                .rate-card {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .category-header {
+                    padding: 30px 20px 15px;
+                }
+                .footer-info {
+                    padding: 20px;
+                }
+            }
+
             @media print {
                 body {
                     background: white;
